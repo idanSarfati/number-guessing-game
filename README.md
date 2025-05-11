@@ -1,5 +1,7 @@
 # 🎮 Number Guessing Game
 
+![Java CI](https://github.com/idanSarfati/number-guessing-game/actions/workflows/java-ci.yml/badge.svg)
+
 A simple Java console game where you try to guess a random number between 1 and 100. You get 6 chances!
 
 ---
@@ -11,11 +13,11 @@ java -version
 
 
 2. **Compile the game**  
-javac NumberGuessingGame.java
+javac GameRunner.java
 
 
 3. **Run the game**  
-java NumberGuessingGame
+java GameRunner
 
 
 Or open in VS Code with the Java Extension Pack and run directly.
@@ -29,8 +31,11 @@ Or open in VS Code with the Java Extension Pack and run directly.
 - Feedback: too high / too low
 - Final guess shows how far you were
 - Win/Lose messages
+- Option to play again after the game ends
 - Handles non-numeric input
 - Clean console interface
+- ✅ Continuous Integration:
+GitHub Actions CI workflow to verify compilation and build success on every push
 
 ---
 
@@ -41,13 +46,13 @@ Or open in VS Code with the Java Extension Pack and run directly.
 - Random number generation
 - Input validation with `hasNextInt()`
 - Clean resource handling (`scanner.close()`)
+- Setting up GitHub Actions for Java projects
 
 ---
 
 ## 🚀 Future Ideas
 
 - Difficulty levels
-- Play again option
 - Adjustable number range
 - GUI with JavaFX/Swing
 - Score tracking
