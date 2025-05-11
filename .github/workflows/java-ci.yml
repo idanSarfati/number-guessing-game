@@ -2,11 +2,9 @@ name: Java CI
 
 on:
   push:
-    branches:
-      - master  # or 'main' if your branch is called main
+    branches: [ master ]
   pull_request:
-    branches:
-      - master
+    branches: [ master ]
 
 jobs:
   build:
@@ -25,5 +23,6 @@ jobs:
       - name: Compile Java files
         run: javac *.java
 
-      - name: Run the game
-        run: java GameRunner  # or your main class
+      # ❌ Remove or comment out this step:
+      # - name: Run the game
+      #   run: java GameRunner
