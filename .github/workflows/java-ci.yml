@@ -23,6 +23,3 @@ jobs:
       - name: Compile Java files
         run: javac *.java
 
-      # ❌ Remove or comment out this step:
-      # - name: Run the game
-      #   run: java GameRunner
